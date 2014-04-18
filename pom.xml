@@ -16,9 +16,9 @@
     <url>https://wiki.jenkins-ci.org/display/JENKINS/Gitlab+Merge+Request+Builder+Plugin</url>
 
     <scm>
-        <connection>scm:git:ssh://github.com/timols/jenkins-gitlab-merge-request-builder-plugin.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/timols/jenkins-gitlab-merge-request-builder-plugin.git</developerConnection>
-        <url>https://github.com/timols/jenkins-gitlab-merge-request-builder-plugin</url>
+        <connection>scm:git:ssh://github.com/jenkinsci/jenkins-gitlab-merge-request-builder-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/jenkinsci/jenkins-gitlab-merge-request-builder-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/gitlab-merge-request-builder-plugin</url>
     </scm>
 
     <developers>
