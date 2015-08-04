@@ -85,6 +85,10 @@ public final class GitlabBuildTrigger extends Trigger<AbstractProject<?, ?>> {
 
     @Override
     public void stop() {
+        if (job == null) {
+            return;
+        }
+
         if (_gitlabMergeRequestBuilder != null) {
             _gitlabMergeRequestBuilder.stop();
             _gitlabMergeRequestBuilder = null;
@@ -95,7 +99,13 @@ public final class GitlabBuildTrigger extends Trigger<AbstractProject<?, ?>> {
 
     @Override
     public void run() {
-        _gitlabMergeRequestBuilder.run();
+        if (job == null) {
+            return;
+        }
+
+        if (_gitlabMergeRequestBuilder != null) {
+            _gitlabMergeRequestBuilder.run();
+        }
         DESCRIPTOR.save();
     }
 
